@@ -183,7 +183,7 @@ body {
 }
 
 .popular-data {
-    @apply container grid grid-cols-15 md:grid-cols-16 lg:grid-cols-17 xl:grid-cols-18 gap-4 xl:gap-16 lg:gap-14 md:gap-8  justify-center mt-0 md:mt-10;
+    @apply container grid grid-cols-15 md:grid-cols-16 lg:grid-cols-17 xl:grid-cols-18 gap-4 xl:gap-16 lg:gap-14 md:gap-8  justify-around mt-0 md:mt-10;
 }
 
 .popuplar-card {
