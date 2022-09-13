@@ -16,6 +16,14 @@ body {
 
 /** TITLE **/
 
+.title h2 {
+    @apply relative text-3xl pl-5 mb-10 text-title;
+}
+
+.title h2::before {
+    @apply content-[""] absolute top-[8px] left-0 w-[4px] h-6 bg-primary;
+}
+
 /** BUTTON **/
 
 /** LOGO **/
@@ -154,4 +162,84 @@ body {
 
 .brand-content h3 {
     @apply text-base text-title text-center;
+}
+
+/** POPULAR **/
+
+.popular-content {
+    @apply container grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-2 text-center md:text-left;
+}
+
+.popular-filters {
+    @apply grid grid-cols-4 gap-x-6 md:gap-x-4 items-center mb-16 order-1 col-span-2 xl:col-span-1;
+}
+
+.popular-item {
+    @apply relative inline-flex items-center gap-x-3 justify-center md:justify-end mt-8 md:mt-0 cursor-pointer;
+}
+
+.popular-item img {
+    @apply w-8;
+}
+
+.popular-data {
+    @apply container grid grid-cols-15 md:grid-cols-16 lg:grid-cols-17 xl:grid-cols-18 gap-4 xl:gap-16 lg:gap-14 md:gap-8  justify-center mt-0 md:mt-10;
+}
+
+.popuplar-card {
+    @apply relative w-[238px] pt-8 px-6 bg-container rounded mb-4 overflow-hidden;
+}
+
+.shape {
+    @apply bg-shape blur-[112px] rounded-full;
+}
+
+.shape-small {
+    @apply h-44 w-44 blur-3xl absolute -top-10 -left-10;
+}
+
+.popuplar-card h1,
+.popuplar-card h3,
+.popuplar-card img {
+    @apply relative;
+}
+
+.popuplar-card h1 {
+    @apply text-xl mb-1 text-title;
+}
+
+.popuplar-card h2 {
+    @apply text-base font-normal;
+}
+
+.popuplar-card img {
+    @apply w-40 pt-3 pl-6 pb-5 pr-0 transition-3s;
+}
+
+.popuplar-card:hover img {
+    @apply transform -translate-y-1;
+}
+
+.popular-info {
+    @apply grid grid-cols-2 gap-y-2 mb-8;
+}
+
+.popular-group {
+    @apply inline-flex items-center gap-x-2 text-sm text-white;
+}
+
+.popular-group i {
+    @apply text-base;
+}
+
+.popular-price {
+    @apply text-xl text-title mb-4;
+}
+
+.popular-btn {
+    @apply py-3 px-4 outline-none border-none absolute bottom-0 right-0 bg-primary text-black rounded-tl-xl rounded-br-xl cursor-pointer;
+}
+
+.popular-btn i {
+    @apply text-xl;
 }

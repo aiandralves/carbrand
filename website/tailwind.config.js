@@ -20,6 +20,7 @@ module.exports = {
                 body: "#18161a",
                 container: "hsl(0, 0%, 100%, .1)",
                 start: "hsl(158, 89%, 30%)",
+                shape: "hsla(48, 98%, 44%, .2)"
             },
             maxWidth: {
                 "home": "700px",
@@ -32,6 +33,12 @@ module.exports = {
             },
             backgroundImage: {
                 home: "url(../img/home.png)"
+            },
+            gridTemplateColumns: {
+                "15": "repeat(1, max-content)",
+                "16": "repeat(2, max-content)",
+                "17": "repeat(3, max-content)",
+                "18": "repeat(4, max-content)"
             }
         },
     },
