@@ -20,7 +20,8 @@ module.exports = {
                 body: "#18161a",
                 container: "hsl(0, 0%, 100%, .1)",
                 start: "hsl(158, 89%, 30%)",
-                shape: "hsla(48, 98%, 44%, .2)"
+                shape: "hsla(48, 98%, 44%, .2)",
+                score: "rgba(0, 0, 0, .6)"
             },
             maxWidth: {
                 "home": "700px",
@@ -32,7 +33,8 @@ module.exports = {
                 "start-two": "0 0 24px hsl(158, 98%, 43%)"
             },
             backgroundImage: {
-                home: "url(../img/home.png)"
+                home: "url(../img/home.png)",
+                overlay: "linear-gradient(270deg,rgba(4,4,4,.23) 0,rgba(0,0,0,.48) 100%)"
             },
             gridTemplateColumns: {
                 "15": "repeat(1, max-content)",

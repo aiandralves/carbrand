@@ -243,3 +243,77 @@ body {
 .popular-btn i {
     @apply text-xl;
 }
+
+/** FEATURED **/
+
+.featured-container {
+    @apply pt-4 container;
+}
+
+.featured-card {
+    @apply relative w-[300px] bg-container rounded;
+}
+
+.featured-img {
+    @apply w-full h-[260px] relative overflow-hidden;
+}
+
+.featured-img img {
+    @apply w-full h-full block object-cover object-top rounded-tr rounded-tl transition-3s;
+}
+
+.featured-img .overlay {
+    @apply absolute top-0 w-full h-full bg-overlay flex items-center justify-evenly py-0 px-5;
+}
+
+.featured-price {
+    @apply absolute bottom-3 left-4 text-white;
+}
+
+.featured-score {
+    @apply absolute top-4 left-4 z-20 items-center gap-1 flex place-content-center w-24 h-8 rounded bg-score;
+}
+
+.featured-score h2 {
+    @apply text-white text-xl font-bold;
+}
+
+.featured-score span {
+    @apply text-title text-xs;
+}
+
+.featured-score i {
+    @apply text-start text-[1.3rem];
+}
+
+.featured-info {
+    @apply mt-6 px-4;
+}
+
+.featured-model {
+    @apply flex items-center gap-2 mb-4;
+}
+
+.featured-model img {
+    @apply w-7;
+}
+
+.featured-model h3 {
+    @apply text-sm;
+}
+
+.featured-info h1 {
+    @apply text-base text-white mb-4 hover:text-primary;
+}
+
+.featured-info p {
+    @apply text-sm mb-4;
+}
+
+.btn-link {
+    @apply inline-flex mb-4 items-center gap-x-2 text-primary hover:text-alt transition-3s;
+}
+
+.btn-link:hover i {
+    @apply transform translate-x-1;
+}
