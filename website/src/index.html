@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
@@ -146,9 +147,9 @@
         </section>
 
         <section class="featured spad" id="featured">
-            <div class="featured-container">
-                <div>
-                    <div class="featured-card">
+            <div class="swiper featured-container">
+                <div class="swiper-wrapper">
+                    <div class="featured-card swiper-slide">
                         <div class="featured-img">
                             <img src="./assets/img/cars/01.jpg">
                             <div class="overlay"></div>
@@ -174,13 +175,11 @@
                             <p>
                                 O Ferrari Portofino recorre ao V8 biturbo de 3,9 litros de 600cv.
                             </p>
-
-                            <button class="btn-link">
-                                Explore <i class="ri-arrow-right-fill"></i>
-                            </button>
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -334,6 +333,7 @@
     </main>
 
     <!-- Javascripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
 
 </body>

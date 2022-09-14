@@ -718,7 +718,8 @@ body {
     right: -100%;
     height: 100%;
     width: 100%;
-    background-color: hsl(0, 0%, 100%, .1);
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 26 31 / var(--tw-bg-opacity));
     --tw-backdrop-blur: blur(96px);
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1257,7 +1258,8 @@ body {
   width: 238px;
   overflow: hidden;
   border-radius: 0.25rem;
-  background-color: hsl(0, 0%, 100%, .1);
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 26 31 / var(--tw-bg-opacity));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 2rem;
@@ -1414,11 +1416,16 @@ body {
   padding-top: 1rem;
 }
 
+.swiper-wrapper {
+  justify-content: center;
+}
+
 .featured-card {
   position: relative;
   width: 300px;
   border-radius: 0.25rem;
-  background-color: hsl(0, 0%, 100%, .1);
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 26 31 / var(--tw-bg-opacity));
 }
 
 .featured-img {

@@ -18,7 +18,7 @@ module.exports = {
                 title: "hsl(219, 8%, 95%)",
                 secondary: "hsl(219, 4%, 55%)",
                 body: "#18161a",
-                container: "hsl(0, 0%, 100%, .1)",
+                container: "#1C1A1F",
                 start: "hsl(158, 89%, 30%)",
                 shape: "hsla(48, 98%, 44%, .2)",
                 score: "rgba(0, 0, 0, .6)"

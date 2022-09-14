@@ -250,6 +250,10 @@ body {
     @apply pt-4 container;
 }
 
+.swiper-wrapper {
+    @apply justify-center;
+}
+
 .featured-card {
     @apply relative w-[300px] bg-container rounded;
 }

@@ -25,3 +25,30 @@ function linkAction() {
     navMenu.classList.remove("show-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+/** Swiper Slider Featured Car */
+
+let swiperFeatured = new Swiper(".featured-container", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+    },
+    slidesPerView: "auto",
+    spaceBetween: 60,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
