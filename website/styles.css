@@ -14,17 +14,31 @@ body {
     @apply overflow-hidden;
 }
 
+/** SHAPE **/
+
+.shape {
+    @apply bg-shape blur-[112px] rounded-full;
+}
+
+.shape-small {
+    @apply h-44 w-44 blur-3xl absolute -top-10 -left-10;
+}
+
 /** TITLE **/
 
 .title h2 {
-    @apply relative text-3xl pl-5 mb-10 text-title;
+    @apply relative text-xl pl-5 mb-10 text-title;
 }
 
 .title h2::before {
-    @apply content-[""] absolute top-[8px] left-0 w-[4px] h-6 bg-primary;
+    @apply content-[""] absolute top-0 left-0 w-[4px] h-6 bg-primary;
 }
 
 /** BUTTON **/
+
+.button {
+    @apply inline-block bg-primary text-white py-4 px-8 rounded text-base transition-3s hover:bg-alt;
+}
 
 /** LOGO **/
 
@@ -70,6 +84,10 @@ body {
 
 .show-menu {
     @apply right-0;
+}
+
+.scroll-header {
+    @apply bg-container;
 }
 
 /** HOME **/
@@ -164,94 +182,14 @@ body {
     @apply text-base text-title text-center;
 }
 
-/** POPULAR **/
-
-.popular-content {
-    @apply container grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-2 text-center md:text-left;
-}
-
-.popular-filters {
-    @apply grid grid-cols-4 gap-x-6 md:gap-x-4 items-center mb-16 order-1 col-span-2 xl:col-span-1;
-}
-
-.popular-item {
-    @apply relative inline-flex items-center gap-x-3 justify-center md:justify-end mt-8 md:mt-0 cursor-pointer;
-}
-
-.popular-item img {
-    @apply w-8;
-}
-
-.popular-data {
-    @apply container grid grid-cols-15 md:grid-cols-16 lg:grid-cols-17 xl:grid-cols-18 gap-4 xl:gap-16 lg:gap-14 md:gap-8  justify-around mt-0 md:mt-10;
-}
-
-.popuplar-card {
-    @apply relative w-[238px] pt-8 px-6 bg-container rounded mb-4 overflow-hidden;
-}
-
-.shape {
-    @apply bg-shape blur-[112px] rounded-full;
-}
-
-.shape-small {
-    @apply h-44 w-44 blur-3xl absolute -top-10 -left-10;
-}
-
-.popuplar-card h1,
-.popuplar-card h3,
-.popuplar-card img {
-    @apply relative;
-}
-
-.popuplar-card h1 {
-    @apply text-xl mb-1 text-title;
-}
-
-.popuplar-card h2 {
-    @apply text-base font-normal;
-}
-
-.popuplar-card img {
-    @apply w-40 pt-3 pl-6 pb-5 pr-0 transition-3s;
-}
-
-.popuplar-card:hover img {
-    @apply transform -translate-y-1;
-}
-
-.popular-info {
-    @apply grid grid-cols-2 gap-y-2 mb-8;
-}
-
-.popular-group {
-    @apply inline-flex items-center gap-x-2 text-sm text-white;
-}
-
-.popular-group i {
-    @apply text-base;
-}
-
-.popular-price {
-    @apply text-xl text-title mb-4;
-}
-
-.popular-btn {
-    @apply py-3 px-4 outline-none border-none absolute bottom-0 right-0 bg-primary text-black rounded-tl-xl rounded-br-xl cursor-pointer;
-}
-
-.popular-btn i {
-    @apply text-xl;
-}
-
 /** FEATURED **/
 
-.featured-container {
-    @apply pt-4 container;
+.featured {
+    @apply pt-6 pb-20 md:pb-16;
 }
 
-.swiper-wrapper {
-    @apply justify-center;
+.featured-container {
+    @apply pt-4 pb-14 container;
 }
 
 .featured-card {
@@ -314,10 +252,231 @@ body {
     @apply text-sm mb-4;
 }
 
-.btn-link {
-    @apply inline-flex mb-4 items-center gap-x-2 text-primary hover:text-alt transition-3s;
+.swiper-pagination-bullet {
+    @apply bg-text;
 }
 
-.btn-link:hover i {
-    @apply transform translate-x-1;
+.swiper-pagination-bullet-active {
+    @apply bg-primary;
+}
+
+/** ABOUT **/
+
+.about-container {
+    @apply container grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-24;
+}
+
+.about-group {
+    @apply relative;
+}
+
+.about-group img {
+    @apply w-[400px] md:w-[600px] rounded-lg;
+}
+
+.about-card {
+    @apply w-[200px] absolute right-0 md:right-12 -bottom-10 bg-card backdrop-blur-lg py-4 px-3 text-center rounded-2xl;
+}
+
+.about-card h3 {
+    @apply text-xl text-white font-semibold mb-2;
+}
+
+.about-card p {
+    @apply text-sm;
+}
+
+.about-info p {
+    @apply text-justify mb-8;
+}
+
+/** POPULAR **/
+
+.popular-container {
+    @apply container pb-14;
+}
+
+.popuplar-card {
+    @apply relative w-[238px] pt-8 px-6 bg-container rounded mb-4 overflow-hidden;
+}
+
+.popuplar-card h1,
+.popuplar-card h3,
+.popuplar-card img {
+    @apply relative;
+}
+
+.popuplar-card h1 {
+    @apply text-xl mb-1 text-title;
+}
+
+.popuplar-card h2 {
+    @apply text-base font-normal;
+}
+
+.popuplar-card img {
+    @apply w-40 pt-3 pl-6 pb-5 pr-0 transition-3s;
+}
+
+.popuplar-card:hover img {
+    @apply transform -translate-y-1;
+}
+
+.popular-info {
+    @apply grid grid-cols-2 gap-y-2 mb-8;
+}
+
+.popular-group {
+    @apply inline-flex items-center gap-x-2 text-sm text-white;
+}
+
+.popular-group i {
+    @apply text-base;
+}
+
+.popular-price {
+    @apply text-xl text-title mb-4;
+}
+
+.popular-btn {
+    @apply py-3 px-4 outline-none border-none absolute bottom-0 right-0 bg-primary text-black rounded-tl-xl rounded-br-xl cursor-pointer;
+}
+
+.popular-btn i {
+    @apply text-xl;
+}
+
+/** FEATURES **/
+
+.features {
+    @apply overflow-hidden relative;
+}
+
+.features-container {
+    @apply container grid grid-cols-[285px] pt-8 justify-center gap-6;
+}
+
+.features-group {
+    @apply grid relative z-10;
+}
+
+.features-group img {
+    @apply w-[150px] justify-self-center;
+}
+
+.features-card {
+    @apply w-[112px] bg-card backdrop-blur-lg rounded-xl py-3 px-8 text-center text-title absolute;
+}
+
+.card-1 {
+    @apply top-16 left-6;
+}
+
+.card-2 {
+    @apply top-32 right-4;
+}
+
+.card-3 {
+    @apply left-6 bottom-8;
+}
+
+.featured-card h3 {
+    @apply text-xl font-semibold mb-2 text-title;
+}
+
+.features-card p {
+    @apply text-xs text-text;
+}
+
+.features-map {
+    @apply max-w-[initial] w-[450px] absolute top-32 -left-6 m-auto transform rotate-12;
+}
+
+/** CARS **/
+
+.cars .title {
+    @apply pl-4 !m-0;
+}
+
+.card-container {
+    @apply container pt-8;
+}
+
+.car-filters {
+    @apply flex items-center justify-center gap-x-4;
+}
+
+.car-group {
+    @apply grid grid-cols-1 md:grid-cols-2 items-center container mb-16 mt-28;
+}
+
+.car-item {
+    @apply w-full h-12 border-none outline-none p-3 rounded bg-container inline-flex gap-x-2 items-center transition-3s hover:bg-card;
+}
+
+.car-item span {
+    @apply text-sm md:text-base text-title;
+}
+
+.car-content {
+    @apply grid grid-cols-[300px] gap-y-10 justify-center pt-12 pb-20;
+}
+
+.car-card {
+    @apply relative bg-container pt-8 pl-8 pb-6 mb-4 rounded-xl;
+}
+
+.car-card .shape-small {
+    @apply absolute inset-0 m-auto;
+}
+
+.car-card h1 {
+    @apply text-xl md:text-2xl text-title mb-2 font-semibold;
+}
+
+.car-card h3 {
+    @apply text-sm md:text-base;
+}
+
+.car-card img {
+    @apply w-[200px] my-6 mx-0 transition-3s;
+}
+
+.car-card:hover img {
+    @apply transform -translate-x-1;
+}
+
+h3.car-price {
+    @apply text-xl text-title mb-4 font-semibold;
+}
+
+.car-btn {
+    @apply py-3 px-4 absolute right-0 bottom-0 rounded-tl-xl rounded-br-xl cursor-pointer transition-3s hover:bg-alt;
+}
+
+.car-btn i {
+    @apply text-xl;
+}
+
+.active-car {
+    @apply bg-card;
+}
+
+/** OFFER **/
+
+.offer {
+    @apply relative;
+}
+
+.offer-container {
+    @apply container grid grid-cols-offer gap-6;
+}
+
+.offer-bg {
+    @apply absolute top-0 left-0 w-full h-full object-cover object-center;
+}
+
+.offer-info,
+.offer-img {
+    @apply relative;
 }

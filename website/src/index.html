@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
@@ -30,16 +30,19 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Brands</a>
+                        <a href="#brand" class="nav-link">Brands</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Cars</a>
+                        <a href="#featured" class="nav-link">Featureds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#popular" class="nav-link">Cars</a>
                     </li>
                 </ul>
 
@@ -146,12 +149,129 @@
             </div>
         </section>
 
-        <section class="featured spad" id="featured">
+        <!-- Featured -->
+        <section class="featured" id="featured">
             <div class="swiper featured-container">
+                <div class="title pb-8">
+                    <h2>Choose Your Electric Car</h2>
+                </div>
+
                 <div class="swiper-wrapper">
                     <div class="featured-card swiper-slide">
                         <div class="featured-img">
                             <img src="./assets/img/cars/01.jpg">
+                            <div class="overlay"></div>
+
+                            <div class="featured-score">
+                                <i class="ri-dashboard-2-line"></i>
+                                <h2>8.9</h2>
+                                <span>/10</span>
+                            </div>
+
+                            <h3 class="featured-price">
+                                €378,425.00
+                            </h3>
+                        </div>
+                        <div class="featured-info">
+                            <div class="featured-model">
+                                <img src="./assets/img/models/cabrio.png">
+                                <h3>Cabrio</h3>
+                            </div>
+                            <a href="#">
+                                <h1>Ferrari Portofino</h1>
+                            </a>
+                            <p>
+                                O Ferrari Portofino recorre ao V8 biturbo de 3,9 litros de 600cv.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-card swiper-slide">
+                        <div class="featured-img">
+                            <img src="./assets/img/cars/02.png">
+                            <div class="overlay"></div>
+
+                            <div class="featured-score">
+                                <i class="ri-dashboard-2-line"></i>
+                                <h2>8.9</h2>
+                                <span>/10</span>
+                            </div>
+
+                            <h3 class="featured-price">
+                                €378,425.00
+                            </h3>
+                        </div>
+                        <div class="featured-info">
+                            <div class="featured-model">
+                                <img src="./assets/img/models/cabrio.png">
+                                <h3>Cabrio</h3>
+                            </div>
+                            <a href="#">
+                                <h1>Ferrari Portofino</h1>
+                            </a>
+                            <p>
+                                O Ferrari Portofino recorre ao V8 biturbo de 3,9 litros de 600cv.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-card swiper-slide">
+                        <div class="featured-img">
+                            <img src="./assets/img/cars/03.png">
+                            <div class="overlay"></div>
+
+                            <div class="featured-score">
+                                <i class="ri-dashboard-2-line"></i>
+                                <h2>8.9</h2>
+                                <span>/10</span>
+                            </div>
+
+                            <h3 class="featured-price">
+                                €378,425.00
+                            </h3>
+                        </div>
+                        <div class="featured-info">
+                            <div class="featured-model">
+                                <img src="./assets/img/models/cabrio.png">
+                                <h3>Cabrio</h3>
+                            </div>
+                            <a href="#">
+                                <h1>Ferrari Portofino</h1>
+                            </a>
+                            <p>
+                                O Ferrari Portofino recorre ao V8 biturbo de 3,9 litros de 600cv.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-card swiper-slide">
+                        <div class="featured-img">
+                            <img src="./assets/img/cars/04.png">
+                            <div class="overlay"></div>
+
+                            <div class="featured-score">
+                                <i class="ri-dashboard-2-line"></i>
+                                <h2>8.9</h2>
+                                <span>/10</span>
+                            </div>
+
+                            <h3 class="featured-price">
+                                €378,425.00
+                            </h3>
+                        </div>
+                        <div class="featured-info">
+                            <div class="featured-model">
+                                <img src="./assets/img/models/cabrio.png">
+                                <h3>Cabrio</h3>
+                            </div>
+                            <a href="#">
+                                <h1>Ferrari Portofino</h1>
+                            </a>
+                            <p>
+                                O Ferrari Portofino recorre ao V8 biturbo de 3,9 litros de 600cv.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-card swiper-slide">
+                        <div class="featured-img">
+                            <img src="./assets/img/cars/05.png">
                             <div class="overlay"></div>
 
                             <div class="featured-score">
@@ -183,36 +303,44 @@
             </div>
         </section>
 
+        <!-- About -->
+        <section class="about spad" id="about">
+            <div class="about-container">
+                <div class="about-group">
+                    <img src="./assets/img/about.png" class="about-img">
+
+                    <div class="about-card">
+                        <h3>2.500+</h3>
+                        <p>
+                            Supercharges placed along popular routes
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    <div class="title">
+                        <h2>Machines With Future Technology</h2>
+                    </div>
+                    <p>
+                        See the future with high-performance electric cars produced by
+                        renowned brands. They feature futuristic builds and designs with
+                        new and innovative platforms that last a long time.
+                    </p>
+
+                    <a href="#" class="button">Know More</a>
+                </div>
+            </div>
+        </section>
 
         <!-- Popular -->
         <div class="popular spad" id="popular">
-            <div class="popular-container">
-                <div class="popular-content">
-                    <div class="title">
-                        <h2>Choose Your Electric Car</h2>
-                    </div>
-
-                    <ul class="popular-filters">
-                        <li class="popular-item popular-line">
-                            <h3>All</h3>
-                        </li>
-                        <li class="popular-item popular-line">
-                            <img src="./assets/img/models/cabrio.png">
-                            <h3>Cabrio</h3>
-                        </li>
-                        <li class="popular-item popular-line">
-                            <img src="./assets/img/models/coupe.png">
-                            <h3>Coupe</h3>
-                        </li>
-                        <li class="popular-item popular-line">
-                            <img src="./assets/img/models/sedan.png">
-                            <h3>Sedan</h3>
-                        </li>
-                    </ul>
+            <div class="swiper popular-container">
+                <div class="title">
+                    <h2>Choose Your Electric Car</h2>
                 </div>
 
-                <div class="popular-data">
-                    <article class="popuplar-card">
+                <div class="swiper-wrapper">
+                    <article class="popuplar-card swiper-slide">
                         <div class="shape shape-small"></div>
 
                         <h1>Porsche</h1>
@@ -241,7 +369,7 @@
                         </button>
                     </article>
 
-                    <article class="popuplar-card">
+                    <article class="popuplar-card swiper-slide">
                         <div class="shape shape-small"></div>
 
                         <h1>Porsche</h1>
@@ -270,7 +398,7 @@
                         </button>
                     </article>
 
-                    <article class="popuplar-card">
+                    <article class="popuplar-card swiper-slide">
                         <div class="shape shape-small"></div>
 
                         <h1>Porsche</h1>
@@ -299,7 +427,7 @@
                         </button>
                     </article>
 
-                    <article class="popuplar-card">
+                    <article class="popuplar-card swiper-slide">
                         <div class="shape shape-small"></div>
 
                         <h1>Porsche</h1>
@@ -328,12 +456,190 @@
                         </button>
                     </article>
                 </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
+
+        <!-- Features -->
+        <section class="features spad">
+            <div class="features-container">
+                <div class="features-group">
+                    <img src="./assets/img/features.png">
+
+                    <div class="features-card card-1">
+                        <h3>800</h3>
+                        <p>Turbo <br> Chargin</p>
+                    </div>
+
+                    <div class="features-card card-2">
+                        <h3>340</h3>
+                        <p>Km <br> Range</p>
+                    </div>
+
+                    <div class="features-card card-3">
+                        <h3>480</h3>
+                        <p>Km <br> Travel</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/img/map.svg" class="features-map">
+        </section>
+
+        <!-- Cars -->
+        <sections class="cars spad" id="car">
+            <div class="car-container">
+                <div class="car-group">
+                    <div class="title">
+                        <h2>Featured Luxury Cars</h2>
+                    </div>
+
+                    <ul class="car-filters">
+                        <li>
+                            <button class="car-item active-car" data-filter="all">
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="car-item" data-filter=".cabrio">
+                                <img src="./assets/img/models/cabrio.png" class="w-8">
+                                <span>Cabrio</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="car-item" data-filter=".coupe">
+                                <img src="./assets/img/models/coupe.png" class="w-8">
+                                <span>Coupe</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="car-item" data-filter=".sedan">
+                                <img src="./assets/img/models/sedan.png" class="w-8">
+                                <span>Sedan</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="car-content">
+                    <article class="car-card mix cabrio">
+                        <div class="shape shape-small"></div>
+
+                        <h1>Tesla</h1>
+                        <h3>Model X</h3>
+
+                        <img src="./assets/img/cars/featured1.png">
+
+                        <h3 class="car-price">
+                            $98,900
+                        </h3>
+
+                        <button class="button car-btn">
+                            <i class="ri-arrow-right-down-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="car-card mix coupe">
+                        <div class="shape shape-small"></div>
+
+                        <h1>Tesla</h1>
+                        <h3>Model X</h3>
+
+                        <img src="./assets/img/cars/featured2.png">
+
+                        <h3 class="car-price">
+                            $98,900
+                        </h3>
+
+                        <button class="button car-btn">
+                            <i class="ri-arrow-right-down-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="car-card mix sedan">
+                        <div class="shape shape-small"></div>
+
+                        <h1>Tesla</h1>
+                        <h3>Model X</h3>
+
+                        <img src="./assets/img/cars/featured3.png">
+
+                        <h3 class="car-price">
+                            $98,900
+                        </h3>
+
+                        <button class="button car-btn">
+                            <i class="ri-arrow-right-down-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="car-card mix coupe">
+                        <div class="shape shape-small"></div>
+
+                        <h1>Tesla</h1>
+                        <h3>Model X</h3>
+
+                        <img src="./assets/img/cars/featured4.png">
+
+                        <h3 class="car-price">
+                            $98,900
+                        </h3>
+
+                        <button class="button car-btn">
+                            <i class="ri-arrow-right-down-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="car-card mix sedan">
+                        <div class="shape shape-small"></div>
+
+                        <h1>Tesla</h1>
+                        <h3>Model X</h3>
+
+                        <img src="./assets/img/cars/featured5.png">
+
+                        <h3 class="car-price">
+                            $98,900
+                        </h3>
+
+                        <button class="button car-btn">
+                            <i class="ri-arrow-right-down-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </sections>
+
+        <!-- Offer -->
+        <section class="offer spad">
+            <div class="offer-container">
+                <img src="./assets/img/offer-bg.png" class="offer-bg">
+
+                <div class="offer-info">
+                    <div class="title offer-title">
+                        <h2>Do You Want To Receive <br> Special Offers?</h2>
+                    </div>
+                    <p>
+                        Be the first to receive all the information about our
+                        products and new cars by email by subscribing to our
+                        mailing list.
+                    </p>
+
+                    <button class="button">
+                        Subscribe Now
+                    </button>
+                </div>
+
+                <img src="./assets/img/offer.png" class="offer-img">
+            </div>
+        </section>
     </main>
 
     <!-- Javascripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/scrollreveal.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
 
 </body>
