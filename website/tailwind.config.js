@@ -42,7 +42,6 @@ module.exports = {
                 "16": "repeat(2, max-content)",
                 "17": "repeat(3, max-content)",
                 "18": "repeat(4, max-content)",
-                "offer": "max-content 224px"
             }
         },
     },

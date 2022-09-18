@@ -24,6 +24,10 @@ body {
     @apply h-44 w-44 blur-3xl absolute -top-10 -left-10;
 }
 
+.shape-big {
+    @apply w-[400px] h-[400px];
+}
+
 /** TITLE **/
 
 .title h2 {
@@ -167,15 +171,15 @@ body {
 /** BRAND **/
 
 .brand-container {
-    @apply container grid grid-cols-3 md:grid-cols-6 gap-4;
+    @apply container grid grid-cols-17 md:grid-cols-6 gap-20 justify-center items-center pb-8;
 }
 
 .brand-content {
-    @apply w-[160px] h-[160px] grid gap-y-8 p-5 transition-3s rounded-md;
+    @apply grid gap-y-6 opacity-40 transition-3s hover:opacity-100;
 }
 
 .brand-content img {
-    @apply w-14 justify-self-center;
+    @apply w-10 justify-self-center;
 }
 
 .brand-content h3 {
@@ -469,7 +473,13 @@ h3.car-price {
 }
 
 .offer-container {
-    @apply container grid grid-cols-offer gap-6;
+    @apply container grid gap-6;
+}
+
+@layer components {
+    .offer-container {
+        grid-template-rows: max-content 224px;
+    }
 }
 
 .offer-bg {
@@ -479,4 +489,35 @@ h3.car-price {
 .offer-info,
 .offer-img {
     @apply relative;
+}
+
+.offer-info {
+    @apply text-center;
+}
+
+.offer-info h2 {
+    @apply text-2xl font-semibold text-white mb-8;
+}
+
+.offer-info p {
+    @apply mb-12;
+}
+
+.offer-img {
+    @apply absolute max-w-[initial] w-[500px] bottom-8 -right-20;
+}
+
+/** FOOTER **/
+
+.footer {
+    @apply relative overflow-hidden;
+}
+
+.footer .shape-small,
+.footer .shape-big {
+    @apply absolute;
+}
+
+.footer-container {
+    @apply container grid gap-6;
 }
