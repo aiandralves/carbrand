@@ -40,9 +40,7 @@ module.exports = {
                 overlay: "linear-gradient(270deg,rgba(4,4,4,.23) 0,rgba(0,0,0,.48) 100%)"
             },
             gridTemplateColumns: {
-                "15": "repeat(1, max-content)",
-                "16": "repeat(2, max-content)",
-                "17": "repeat(3, max-content)",
+                "03": "repeat(3, max-content)",
                 "04": "repeat(4, max-content)",
                 "228": "repeat(2, 228px)",
                 "248": "repeat(3, 248px)",

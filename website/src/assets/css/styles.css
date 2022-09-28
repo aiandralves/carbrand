@@ -1321,6 +1321,12 @@ body {
   padding-bottom: 3.5rem;
 }
 
+@media (min-width: 1280px) {
+  .featured-container {
+    padding-bottom: 5rem;
+  }
+}
+
 .featured-card {
   position: relative;
   width: 300px;
@@ -1519,6 +1525,12 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  .about-container {
+    gap: 6rem;
+  }
+}
+
 .about-group {
   position: relative;
 }
@@ -1542,6 +1554,12 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  .about-group {
+    width: 550px;
+  }
+}
+
 .about-group img {
   width: 380px;
   border-radius: 0.5rem;
@@ -1550,6 +1568,12 @@ body {
 @media (min-width: 1024px) {
   .about-group img {
     width: 480px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-group img {
+    width: 550px;
   }
 }
 
@@ -2295,7 +2319,6 @@ h3.car-price {
     align-items: center;
     -moz-column-gap: 5rem;
          column-gap: 5rem;
-    padding-bottom: 2rem;
   }
 }
 
@@ -2373,6 +2396,8 @@ h3.car-price {
 .footer {
   position: relative;
   overflow: hidden;
+  padding-bottom: 5rem;
+  padding-top: 7rem;
 }
 
 .footer .shape-small, 
@@ -2530,7 +2555,7 @@ h3.car-price {
 }
 
 .footer-copy {
-  margin-top: 4rem;
+  margin-top: 5rem;
   display: block;
   text-align: center;
   font-size: 0.875rem;

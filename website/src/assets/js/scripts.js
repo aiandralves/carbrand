@@ -101,10 +101,6 @@ let swiperPopular = new Swiper(".popular-container", {
         1024: {
             spaceBetween: 48,
         },
-        1280: {
-            slidesPerView: 4,
-            spaceBetween: 48,
-        },
     },
 });
 

@@ -175,7 +175,7 @@ body {
 /** BRAND **/
 
 .brand-container {
-    @apply container grid grid-cols-17 md:grid-cols-3 lg:grid-cols-6 gap-20 justify-center items-center pb-8;
+    @apply container grid grid-cols-03 md:grid-cols-3 lg:grid-cols-6 gap-20 justify-center items-center pb-8;
 }
 
 .brand-content {
@@ -197,7 +197,7 @@ body {
 }
 
 .featured-container {
-    @apply pt-4 pb-14 container;
+    @apply pt-4 pb-14 xl:pb-20 container;
 }
 
 .featured-card {
@@ -271,15 +271,15 @@ body {
 /** ABOUT **/
 
 .about-container {
-    @apply container grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-28 lg:items-center;
+    @apply container grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-28 xl:gap-24 lg:items-center;
 }
 
 .about-group {
-    @apply relative sm:w-[450px] md:w-[350px] lg:w-[480px] sm:justify-self-center;
+    @apply relative sm:w-[450px] md:w-[350px] lg:w-[480px] xl:w-[550px] sm:justify-self-center;
 }
 
 .about-group img {
-    @apply w-[380px] lg:w-[480px] rounded-lg;
+    @apply w-[380px] lg:w-[480px] xl:w-[550px] rounded-lg;
 }
 
 .about-card {
@@ -477,7 +477,7 @@ h3.car-price {
 }
 
 .offer-container {
-    @apply container grid grid-rows-224 sm:grid-rows-[initial] sm:grid-cols-5fr lg:grid-cols-2 lg:gap-x-20 lg:items-center gap-6 sm:justify-center lg:pb-8;
+    @apply container grid grid-rows-224 sm:grid-rows-[initial] sm:grid-cols-5fr lg:grid-cols-2 lg:gap-x-20 lg:items-center gap-6 sm:justify-center;
 }
 
 .offer-bg {
@@ -508,7 +508,7 @@ h3.car-price {
 /** FOOTER **/
 
 .footer {
-    @apply relative overflow-hidden;
+    @apply relative overflow-hidden pb-20 pt-28;
 }
 
 .footer .shape-small,
@@ -563,7 +563,7 @@ h3.car-price {
 }
 
 .footer-copy {
-    @apply block mt-16 text-center text-sm;
+    @apply block mt-20 text-center text-sm;
 }
 
 .footer-copy a {
