@@ -73,6 +73,10 @@ let swiperFeatured = new Swiper(".featured-container", {
             slidesPerView: 2,
         },
         1024: {
+            slidesPerView: 3,
+            spaceBetween: 48,
+        },
+        1280: {
             slidesPerView: 4,
             spaceBetween: 48,
         },
@@ -92,9 +96,13 @@ let swiperPopular = new Swiper(".popular-container", {
     },
     breakpoints: {
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         1024: {
+            spaceBetween: 48,
+        },
+        1280: {
+            slidesPerView: 4,
             spaceBetween: 48,
         },
     },
@@ -119,3 +127,13 @@ function activeCar() {
 }
 
 linkCar.forEach(c => c.addEventListener("click", activeCar));
+
+/** Show Scroll Up **/
+
+function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+
+    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);

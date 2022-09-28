@@ -21,11 +21,11 @@ body {
 }
 
 .shape-small {
-    @apply h-44 w-44 blur-3xl absolute -top-10 -left-10;
+    @apply h-44 lg:h-48 w-44 lg:w-48 blur-3xl absolute -top-10 -left-10;
 }
 
 .shape-big {
-    @apply w-[400px] h-[400px];
+    @apply w-[400px] lg:w-[500px] h-[400px] lg:h-[500px];
 }
 
 /** TITLE **/
@@ -75,7 +75,7 @@ body {
 }
 
 .nav-list {
-    @apply flex flex-col text-center gap-y-12 pt-28 md:pt-0 md:flex-row md:gap-x-12;
+    @apply flex flex-col md:flex-row text-center gap-y-12 pt-28 md:pt-0 md:gap-x-12;
 }
 
 .nav-link {
@@ -92,6 +92,10 @@ body {
 
 .scroll-header {
     @apply bg-container;
+}
+
+.active {
+    @apply text-primary;
 }
 
 /** HOME **/
@@ -121,7 +125,7 @@ body {
 }
 
 .home-content {
-    @apply flex justify-center items-center gap-x-16 mb-8 mt-12;
+    @apply flex justify-center items-center gap-x-16 lg:gap-x-28 mb-8 mt-12;
 }
 
 .home-data {
@@ -137,11 +141,11 @@ body {
 }
 
 .home-data span {
-    @apply border-2 border-title rounded-full inline-flex h-8 w-8 p-1 items-center justify-center mb-3;
+    @apply border-2 border-title rounded-full inline-flex h-8 lg:h-10 w-8 lg:w-10 p-1 lg:p-2 items-center justify-center mb-3;
 }
 
 .home-data span i {
-    @apply text-white text-sm !important;
+    @apply text-white text-sm lg:text-xl !important;
 }
 
 .home-button {
@@ -171,7 +175,7 @@ body {
 /** BRAND **/
 
 .brand-container {
-    @apply container grid grid-cols-17 md:grid-cols-6 gap-20 justify-center items-center pb-8;
+    @apply container grid grid-cols-17 md:grid-cols-3 lg:grid-cols-6 gap-20 justify-center items-center pb-8;
 }
 
 .brand-content {
@@ -267,19 +271,19 @@ body {
 /** ABOUT **/
 
 .about-container {
-    @apply container grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-24;
+    @apply container grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-28 lg:items-center;
 }
 
 .about-group {
-    @apply relative;
+    @apply relative sm:w-[450px] md:w-[350px] lg:w-[480px] sm:justify-self-center;
 }
 
 .about-group img {
-    @apply w-[400px] md:w-[600px] rounded-lg;
+    @apply w-[380px] lg:w-[480px] rounded-lg;
 }
 
 .about-card {
-    @apply w-[200px] absolute right-0 md:right-12 -bottom-10 bg-card backdrop-blur-lg py-4 px-3 text-center rounded-2xl;
+    @apply w-[200px] lg:w-[220px] absolute right-0 md:right-12 -bottom-10 bg-card backdrop-blur-lg py-4 px-3 text-center rounded-2xl;
 }
 
 .about-card h3 {
@@ -291,17 +295,17 @@ body {
 }
 
 .about-info p {
-    @apply text-justify mb-8;
+    @apply text-justify mb-8 lg:mb-12 lg:pr-16;
 }
 
 /** POPULAR **/
 
 .popular-container {
-    @apply container pb-14;
+    @apply container pb-14 lg:w-[875px] xl:w-full;
 }
 
 .popuplar-card {
-    @apply relative w-[238px] pt-8 px-6 bg-container rounded mb-4 overflow-hidden;
+    @apply relative w-[238px] lg:w-[258px] pt-8  px-6 bg-container rounded mb-4 lg:mb-12 overflow-hidden;
 }
 
 .popuplar-card h1,
@@ -319,7 +323,7 @@ body {
 }
 
 .popuplar-card img {
-    @apply w-40 pt-3 pl-6 pb-5 pr-0 transition-3s;
+    @apply w-40 lg:w-44 pt-3 pl-6 pb-5 pr-0 transition-3s;
 }
 
 .popuplar-card:hover img {
@@ -365,23 +369,23 @@ body {
 }
 
 .features-group img {
-    @apply w-[150px] justify-self-center;
+    @apply w-[150px] lg:w-[200px] justify-self-center;
 }
 
 .features-card {
-    @apply w-[112px] bg-card backdrop-blur-lg rounded-xl py-3 px-8 text-center text-title absolute;
+    @apply w-[112px] lg:w-[128px] bg-card backdrop-blur-lg rounded-xl py-3 px-8 lg:px-12 text-center text-title absolute;
 }
 
 .card-1 {
-    @apply top-16 left-6;
+    @apply top-16 left-6 lg:-left-4;
 }
 
 .card-2 {
-    @apply top-32 right-4;
+    @apply top-32 right-4 lg:-right-8;
 }
 
 .card-3 {
-    @apply left-6 bottom-8;
+    @apply left-6 lg:-left-4 bottom-8 lg:bottom-28;
 }
 
 .featured-card h3 {
@@ -393,7 +397,7 @@ body {
 }
 
 .features-map {
-    @apply max-w-[initial] w-[450px] absolute top-32 -left-6 m-auto transform rotate-12;
+    @apply max-w-[initial] w-[450px] lg:w-[650px] absolute top-32 lg:top-12 sm:left-0 sm:right-0 -left-6 lg:-left-32 m-auto transform rotate-12;
 }
 
 /** CARS **/
@@ -402,8 +406,8 @@ body {
     @apply pl-4 !m-0;
 }
 
-.card-container {
-    @apply container pt-8;
+.car-container {
+    @apply container pt-8 xl:pb-20;
 }
 
 .car-filters {
@@ -423,7 +427,7 @@ body {
 }
 
 .car-content {
-    @apply grid grid-cols-[300px] gap-y-10 justify-center pt-12 pb-20;
+    @apply grid grid-cols-[300px] sm:grid-cols-228 lg:grid-cols-248 gap-8 lg:gap-16 xl:gap-12 xl:grid-cols-252 justify-center pt-12 lg:pb-12 pb-20;
 }
 
 .car-card {
@@ -473,13 +477,7 @@ h3.car-price {
 }
 
 .offer-container {
-    @apply container grid gap-6;
-}
-
-@layer components {
-    .offer-container {
-        grid-template-rows: max-content 224px;
-    }
+    @apply container grid grid-rows-224 sm:grid-rows-[initial] sm:grid-cols-5fr lg:grid-cols-2 lg:gap-x-20 lg:items-center gap-6 sm:justify-center lg:pb-8;
 }
 
 .offer-bg {
@@ -492,7 +490,7 @@ h3.car-price {
 }
 
 .offer-info {
-    @apply text-center;
+    @apply text-center lg:text-left sm:mb-16 lg:mb-0;
 }
 
 .offer-info h2 {
@@ -500,11 +498,11 @@ h3.car-price {
 }
 
 .offer-info p {
-    @apply mb-12;
+    @apply mb-12 lg:pr-20;
 }
 
 .offer-img {
-    @apply absolute max-w-[initial] w-[500px] bottom-8 -right-20;
+    @apply absolute sm:relative max-w-[initial] w-[500px] bottom-8 sm:bottom-[initial] -right-20 sm:right-[initial];
 }
 
 /** FOOTER **/
@@ -518,6 +516,77 @@ h3.car-price {
     @apply absolute;
 }
 
+.footer .shape-big {
+    @apply w-[300px] h-[300px] -left-48 top-24;
+}
+
+.footer .shape-small {
+    @apply -top-52 -bottom-24;
+}
+
 .footer-container {
-    @apply container grid gap-6;
+    @apply container relative grid md:grid-cols-2 lg:grid-cols-04 lg:justify-between gap-y-10;
+}
+
+.footer-logo {
+    @apply inline-flex text-xl items-center gap-x-2 lg:gap-x-3 text-title font-semibold mb-5 transition-3s hover:text-primary;
+}
+
+.footer-logo i {
+    @apply text-2xl lg:text-[2rem] font-medium text-primary;
+}
+
+.footer-title {
+    @apply text-xl font-semibold text-white mb-5;
+}
+
+.footer-links {
+    @apply flex flex-col gap-y-2;
+}
+
+.footer-links,
+.footer-social {
+    @apply text-text transition-3s;
+}
+
+.footer-links a,
+.footer-social a {
+    @apply hover:text-title;
+}
+
+.footer-social {
+    @apply flex gap-x-6;
+}
+
+.footer-social a {
+    @apply text-xl;
+}
+
+.footer-copy {
+    @apply block mt-16 text-center text-sm;
+}
+
+.footer-copy a {
+    @apply text-title hover:text-primary;
+}
+
+/** SCROLL BAR **/
+
+::-webkit-scrollbar {
+    @apply w-[.4rem] h-[.4rem] bg-scrollbar rounded-xl;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-scrollbar-thumb rounded-xl hover:bg-card;
+}
+
+/** SCROLLUP **/
+
+.scrollup {
+    @apply fixed right-4 -bottom-[30%] bg-card backdrop-blur-lg inline-flex items-center p-[.45rem] rounded text-xl text-white z-10 transition-3s
+    hover:transform hover:translate-y-1;
+}
+
+.show-scroll {
+    @apply bottom-12;
 }
