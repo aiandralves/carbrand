@@ -1,8 +1,20 @@
-<h1 align="center">Cardbrand</h1>
+<h2 align="center"> 
+	Cardbrand 🚗🛻
+</h2>
+
+<div align="center">
+
+![License](https://img.shields.io/badge/license-MIT-737CA1?style=flat-square)
+[![Aiandra](https://img.shields.io/badge/autor-Aiandra-FA7343?style=flat-square)](https://aiandralves.com)
+[![Linkedin Badge](https://img.shields.io/badge/-linkedin-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aiandralves/)](https://www.linkedin.com/in/aiandralves/)
+
+</div>
 
 <p align="center">
     <img alt="Preview" src="website/src/assets/img/10.png">
 </p>
+
+<a name="-projeto"></a>
 
 ## 💻 Projeto
 
@@ -12,6 +24,7 @@
   Também inclui seções de CTA (call to action), comparativos de preços e vitrine de modelos com destaque de marca.
 </p>
 
+<a name="-tecnologia"></a>
 
 ## ✨ Tecnologias
 
@@ -45,4 +58,12 @@
 
 ---
 
-Feito com ❤ por Aiandra Meira 👋🏻 &nbsp;[Portfólio Pessoal](https://aiandralves.com.br)
+<a name="-contribution"></a>
+
+## 🤝 Contribuição
+
+Faça um **fork** do repositório e se te ajudei de alguma forma, deixe uma 🌟
+
+---
+
+Feito com ❤ por Aiandra Meira 👋🏻 &nbsp;[Portfólio Pessoal](https://aiandralves.com)
